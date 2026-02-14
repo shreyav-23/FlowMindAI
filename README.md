@@ -13,9 +13,8 @@ Unlike traditional summarization tools, FlowMind focuses on:
 
 This project is designed for global students — high school, university, competitive exam aspirants, and self-learners — with special emphasis on low-bandwidth accessibility and scalable cloud architecture.
 
- 
 
-## 🚀 Problem Statement
+## Problem Statement
 
 Students often:
 
@@ -28,9 +27,8 @@ Students often:
 Traditional tools only summarize content.  
 They do not reconstruct how ideas connect.
 
- 
 
-## 💡 Our Solution
+## Our Solution
 
 FlowMind AI transforms study material into:
 
@@ -62,9 +60,8 @@ FlowMind AI transforms study material into:
    - Output in preferred language  
    - Supports: English, Spanish, French, German, Hindi, Mandarin, Arabic  
 
- 
 
-## 🧠 Why AI Is Required
+## Why AI Is Required
 
 This system cannot be built using rule-based logic alone.
 
@@ -78,9 +75,8 @@ AI is required to:
 
 We use structured prompting with strict JSON schema validation to ensure reliability.
 
- 
 
-## 🏗 Architecture (AWS Serverless)
+## Architecture (AWS Serverless)
 
 FlowMind AI is designed for global scalability using AWS.
 
@@ -95,13 +91,13 @@ FlowMind AI is designed for global scalability using AWS.
 - ElastiCache (Redis) – response caching
 - CloudWatch – monitoring & logging
 
+
 ### High-Level Flow
 
 Client → API Gateway → Lambda → Bedrock → Schema Validator → Cache → Response
 
- 
 
-## 📡 Low Bandwidth Optimization
+## Low Bandwidth Optimization
 
 - Compressed API responses (<100KB core responses)
 - Text-first responses before visual rendering
@@ -110,9 +106,8 @@ Client → API Gateway → Lambda → Bedrock → Schema Validator → Cache →
 
 Designed to work in low-connectivity environments.
 
- 
 
-## 🔐 Responsible AI & Privacy
+## Responsible AI & Privacy
 
 - Strict JSON schema validation
 - No raw model output returned directly
@@ -122,8 +117,7 @@ Designed to work in low-connectivity environments.
 - Confidence scoring for reasoning reconstruction
 
 
-
-## 🎯 Target Users
+## Target Users
 
 - High school students  
 - University students  
@@ -134,8 +128,7 @@ Designed to work in low-connectivity environments.
 Global focus with inclusive language and accessibility design.
 
 
-
-## 📈 Future Roadmap
+## Future Roadmap
 
 - LMS integrations  
 - Mobile-first version  
@@ -144,8 +137,7 @@ Global focus with inclusive language and accessibility design.
 - Institutional licensing model  
 
 
-
-## 🏆 Hackathon Alignment
+## Hackathon Alignment
 
 This project demonstrates:
 
@@ -156,7 +148,6 @@ This project demonstrates:
 - Global applicability  
 
 
-
-## 👥 Team
+## Team
 
 BrainX
