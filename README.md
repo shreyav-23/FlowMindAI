@@ -13,7 +13,7 @@ Unlike traditional summarization tools, FlowMind focuses on:
 
 This project is designed for global students — high school, university, competitive exam aspirants, and self-learners — with special emphasis on low-bandwidth accessibility and scalable cloud architecture.
 
----
+ 
 
 ## 🚀 Problem Statement
 
@@ -28,7 +28,7 @@ Students often:
 Traditional tools only summarize content.  
 They do not reconstruct how ideas connect.
 
----
+ 
 
 ## 💡 Our Solution
 
@@ -62,7 +62,7 @@ FlowMind AI transforms study material into:
    - Output in preferred language  
    - Supports: English, Spanish, French, German, Hindi, Mandarin, Arabic  
 
----
+ 
 
 ## 🧠 Why AI Is Required
 
@@ -78,7 +78,7 @@ AI is required to:
 
 We use structured prompting with strict JSON schema validation to ensure reliability.
 
----
+ 
 
 ## 🏗 Architecture (AWS Serverless)
 
@@ -99,7 +99,7 @@ FlowMind AI is designed for global scalability using AWS.
 
 Client → API Gateway → Lambda → Bedrock → Schema Validator → Cache → Response
 
----
+ 
 
 ## 📡 Low Bandwidth Optimization
 
@@ -110,7 +110,7 @@ Client → API Gateway → Lambda → Bedrock → Schema Validator → Cache →
 
 Designed to work in low-connectivity environments.
 
----
+ 
 
 ## 🔐 Responsible AI & Privacy
 
@@ -121,7 +121,7 @@ Designed to work in low-connectivity environments.
 - User-friendly error handling
 - Confidence scoring for reasoning reconstruction
 
----
+
 
 ## 🎯 Target Users
 
@@ -133,7 +133,7 @@ Designed to work in low-connectivity environments.
 
 Global focus with inclusive language and accessibility design.
 
----
+
 
 ## 📈 Future Roadmap
 
@@ -143,7 +143,7 @@ Global focus with inclusive language and accessibility design.
 - Classroom collaboration features  
 - Institutional licensing model  
 
----
+
 
 ## 🏆 Hackathon Alignment
 
@@ -155,14 +155,8 @@ This project demonstrates:
 - Responsible AI design principles  
 - Global applicability  
 
----
+
 
 ## 👥 Team
 
 BrainX
-
----
-
-## 📄 License
-
-MIT License
