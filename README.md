@@ -123,16 +123,6 @@ Designed to work in low-connectivity environments.
 
 ---
 
-## 📂 Repository Structure
-
-.
-├── requirements.md # Functional and non-functional requirements
-├── design.md # System architecture and API design
-├── README.md # Project overview
-└── (frontend prototype files)
-
----
-
 ## 🎯 Target Users
 
 - High school students  
@@ -169,10 +159,10 @@ This project demonstrates:
 
 ## 👥 Team
 
-(Your team name here)
+BrainX
 
 ---
 
 ## 📄 License
 
-MIT License (or specify as needed)
+MIT License
