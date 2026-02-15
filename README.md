@@ -148,6 +148,11 @@ This project demonstrates:
 - Global applicability  
 
 
+## Specification Generation
+
+The requirements.md and design.md documents in this repository were generated and iteratively refined using Kiro’s Spec → Design workflow, as required by the hackathon guidelines.
+
+
 ## Team
 
-BrainX
+Team BrainX – AI for structured global learning.
