@@ -18,43 +18,73 @@ The architecture prioritizes:
 ```mermaid
 graph TB
     Client[Client Application]
-    
-    subgraph AWS Cloud
+
+    subgraph AWS_Cloud
         APIGW[API Gateway]
         Auth[Lambda Authorizer]
-        
-        subgraph Processing Layer
+
+        subgraph Processing_Layer
             FlowGen[Flow Diagram Generator]
             ReasonPath[Reasoning Path Reconstructor]
             GapDetect[Gap Detector]
             SourceComp[Source Comparator]
             QuizGen[Quiz Generator]
         end
-        
-        subgraph AI Layer
+
+        subgraph AI_Layer
             Bedrock[AWS Bedrock / SageMaker]
             LangDetect[Language Detection Service]
         end
-        
-        subgraph Data Layer
+
+        subgraph Data_Layer
             Cache[ElastiCache Redis]
             S3[S3 Bucket - Temp Storage]
             DDB[DynamoDB - Metadata]
         end
-        
+
         subgraph Monitoring
             CW[CloudWatch Logs & Metrics]
         end
     end
-    
-    Client -->|HTTPS| APIGW
+
+    Client --> APIGW
     APIGW --> Auth
-    Auth --> Processing Layer
-    Processing Layer --> AI Layer
-    Processing Layer --> Cache
-    Processing Layer --> S3
-    Processing Layer --> DDB
-    Processing Layer --> CW
+    Auth --> FlowGen
+    Auth --> ReasonPath
+    Auth --> GapDetect
+    Auth --> SourceComp
+    Auth --> QuizGen
+
+    FlowGen --> Bedrock
+    ReasonPath --> Bedrock
+    GapDetect --> Bedrock
+    SourceComp --> Bedrock
+    QuizGen --> Bedrock
+
+    FlowGen --> Cache
+    ReasonPath --> Cache
+    GapDetect --> Cache
+    SourceComp --> Cache
+    QuizGen --> Cache
+
+    FlowGen --> S3
+    ReasonPath --> S3
+    GapDetect --> S3
+    SourceComp --> S3
+    QuizGen --> S3
+
+    FlowGen --> DDB
+    ReasonPath --> DDB
+    GapDetect --> DDB
+    SourceComp --> DDB
+    QuizGen --> DDB
+
+    FlowGen --> CW
+    ReasonPath --> CW
+    GapDetect --> CW
+    SourceComp --> CW
+    QuizGen --> CW
+
 ```
 
 ### Component Responsibilities
@@ -964,3 +994,4 @@ cache_key = SHA256(
    - Lambda function warming
    - Connection pooling for DynamoDB
    - Batch processing for multiple requests
+
