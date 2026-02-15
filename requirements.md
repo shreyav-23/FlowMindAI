@@ -4,6 +4,8 @@
 
 The AI-Powered Structured Learning Assistant is a system designed to transform unstructured study materials into structured, cognitively-organized learning resources. Unlike traditional summarization tools, this system focuses on reconstructing logical reasoning paths, identifying conceptual gaps, and helping learners understand how ideas connect. The system serves high school students, university students, competitive exam aspirants, and self-learners globally, with particular emphasis on accessibility in low-bandwidth environments.
 
+This system requires generative AI capabilities because rule-based logic alone cannot infer implicit reasoning steps, understand semantic meaning across languages, detect conceptual dependencies, or generate context-aware educational content. Therefore, advanced AI models are essential to achieve accurate reasoning reconstruction and gap detection.
+
 ## Glossary
 
 - **System**: The AI-Powered Structured Learning Assistant
@@ -180,3 +182,4 @@ The AI-Powered Structured Learning Assistant is a system designed to transform u
 5. THE System SHALL not generate content that promotes academic dishonesty or plagiarism
 6. WHEN processing sensitive topics, THE System SHALL maintain neutrality and present multiple perspectives where appropriate
 7. THE System SHALL include disclaimers that AI-generated content should be verified against authoritative sources
+
